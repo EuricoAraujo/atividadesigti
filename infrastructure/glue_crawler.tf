@@ -1,6 +1,6 @@
 resource "aws_glue_crawler" "atividade1" {
   database_name = aws_glue_catalog_database.atividade1.name
-  name          = "atividade1_crawler"
+  name          = "atividade1"
   role          = aws_iam_role.glue_role.arn
 
   s3_target {
