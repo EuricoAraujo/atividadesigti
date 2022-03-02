@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "datalake-eurico-atv1"{
     bucket = "datalake-eurico-atv1"
-    acl = "private"
+#acl = "private"
   tags = {
     IES   = "IGTI",
     CURSO = "EDC"
