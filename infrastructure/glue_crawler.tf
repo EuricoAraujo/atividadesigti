@@ -1,3 +1,7 @@
+resource "aws_glue_catalog_database" "atividade1" {
+  name = "atividade1"
+}
+
 resource "aws_glue_crawler" "atividade1" {
   database_name = aws_glue_catalog_database.atividade1.name
   name          = "atividade1"
