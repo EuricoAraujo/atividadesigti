@@ -4,7 +4,7 @@ name: Deploy
 ## quando houver um push irá executar
 on:
   push:
-    branches: [master]
+    branches: [main]
 ## seta o SO linux 
 jobs:
   deploy:
