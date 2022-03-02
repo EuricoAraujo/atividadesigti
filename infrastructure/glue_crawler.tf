@@ -8,7 +8,7 @@ resource "aws_glue_crawler" "atividade1" {
   role          = aws_iam_role.glue_role.arn
 
   s3_target {
-    path = "s3://${aws_s3_bucket.atividade1.bucket}"
+    path = "s3://${aws_s3_bucket.datalake-eurico-atv1.bucket}/staging/enem"
   }
 
   configuration = <<EOF
