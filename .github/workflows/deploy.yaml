@@ -31,7 +31,7 @@ jobs:
 
     - name: Build Lambda package
       run: |
-      sh scripts/build_lambda_package.sh
+        sh scripts/build_lambda_package.sh
 #aplica a esteira
     - name: IaC Apply
       env:
