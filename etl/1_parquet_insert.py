@@ -4,6 +4,13 @@ spark = (SparkSession.builder.appName("exercicio1")
     .getOrCreate()
 )
 
+#carregar os dados
+from botocore.exceptions import ClientError
+import boto3
+
+s3 = boto3.resource('s3')
+data = open('../data/DADOS/MICRODADOS_ENEM_2020.csv', 'rb')
+s3.Bucket('datalake-eurico-atv1').put_object(Key='raw-data/enem2020.csv', Body=data)
 
 # Leitura de dados
 enem = (
