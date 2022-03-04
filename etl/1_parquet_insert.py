@@ -18,7 +18,7 @@ enem = (
     .option("inferSchema", True)
     .option("header", True)
     .option("delimiter", ";")
-    .load("s3://datalake-eurico-atv1/raw-data/1_parquet_insert.py")
+    .load("s3://datalake-eurico-atv1/raw-data/enem2020.csv")
 )
 
 (
