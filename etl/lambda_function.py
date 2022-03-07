@@ -30,7 +30,7 @@ def handler(event, context):
                             'InstanceCount': 1,
                         }
                     ],
-                    'Ec2KeyName': 'eurico-igti-teste',
+                    'Ec2KeyName': 'eurico-igti-teste',  #criar manualmente ec2
                     'KeepJobFlowAliveWhenNoSteps': True,
                     'TerminationProtected': False,
                     'Ec2SubnetId': 'subnet-1df20360'
